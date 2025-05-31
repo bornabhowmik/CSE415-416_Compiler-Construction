@@ -1,0 +1,53 @@
+
+even_odd.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 14 <main+0x14>
+  14:	48 89 c1             	mov    rcx,rax
+  17:	e8 00 00 00 00       	call   1c <main+0x1c>
+  1c:	48 8d 45 fc          	lea    rax,[rbp-0x4]
+  20:	48 89 c2             	mov    rdx,rax
+  23:	48 8d 05 11 00 00 00 	lea    rax,[rip+0x11]        # 3b <main+0x3b>
+  2a:	48 89 c1             	mov    rcx,rax
+  2d:	e8 00 00 00 00       	call   32 <main+0x32>
+  32:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  35:	83 e0 01             	and    eax,0x1
+  38:	85 c0                	test   eax,eax
+  3a:	75 16                	jne    52 <main+0x52>
+  3c:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  3f:	89 c2                	mov    edx,eax
+  41:	48 8d 05 14 00 00 00 	lea    rax,[rip+0x14]        # 5c <main+0x5c>
+  48:	48 89 c1             	mov    rcx,rax
+  4b:	e8 00 00 00 00       	call   50 <main+0x50>
+  50:	eb 14                	jmp    66 <main+0x66>
+  52:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  55:	89 c2                	mov    edx,eax
+  57:	48 8d 05 21 00 00 00 	lea    rax,[rip+0x21]        # 7f <main+0x7f>
+  5e:	48 89 c1             	mov    rcx,rax
+  61:	e8 00 00 00 00       	call   66 <main+0x66>
+  66:	b8 00 00 00 00       	mov    eax,0x0
+  6b:	48 83 c4 30          	add    rsp,0x30
+  6f:	5d                   	pop    rbp
+  70:	c3                   	ret
+  71:	90                   	nop
+  72:	90                   	nop
+  73:	90                   	nop
+  74:	90                   	nop
+  75:	90                   	nop
+  76:	90                   	nop
+  77:	90                   	nop
+  78:	90                   	nop
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop

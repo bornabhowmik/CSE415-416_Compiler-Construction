@@ -1,0 +1,53 @@
+
+greater.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 14 <main+0x14>
+  14:	48 89 c1             	mov    rcx,rax
+  17:	e8 00 00 00 00       	call   1c <main+0x1c>
+  1c:	48 8d 55 f8          	lea    rdx,[rbp-0x8]
+  20:	48 8d 45 fc          	lea    rax,[rbp-0x4]
+  24:	49 89 d0             	mov    r8,rdx
+  27:	48 89 c2             	mov    rdx,rax
+  2a:	48 8d 05 14 00 00 00 	lea    rax,[rip+0x14]        # 45 <main+0x45>
+  31:	48 89 c1             	mov    rcx,rax
+  34:	e8 00 00 00 00       	call   39 <main+0x39>
+  39:	8b 55 fc             	mov    edx,DWORD PTR [rbp-0x4]
+  3c:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  3f:	39 c2                	cmp    edx,eax
+  41:	7e 1c                	jle    5f <main+0x5f>
+  43:	8b 55 f8             	mov    edx,DWORD PTR [rbp-0x8]
+  46:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  49:	41 89 d0             	mov    r8d,edx
+  4c:	89 c2                	mov    edx,eax
+  4e:	48 8d 05 1a 00 00 00 	lea    rax,[rip+0x1a]        # 6f <main+0x6f>
+  55:	48 89 c1             	mov    rcx,rax
+  58:	e8 00 00 00 00       	call   5d <main+0x5d>
+  5d:	eb 35                	jmp    94 <main+0x94>
+  5f:	8b 55 f8             	mov    edx,DWORD PTR [rbp-0x8]
+  62:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  65:	39 c2                	cmp    edx,eax
+  67:	7e 1c                	jle    85 <main+0x85>
+  69:	8b 55 fc             	mov    edx,DWORD PTR [rbp-0x4]
+  6c:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  6f:	41 89 d0             	mov    r8d,edx
+  72:	89 c2                	mov    edx,eax
+  74:	48 8d 05 1a 00 00 00 	lea    rax,[rip+0x1a]        # 95 <main+0x95>
+  7b:	48 89 c1             	mov    rcx,rax
+  7e:	e8 00 00 00 00       	call   83 <main+0x83>
+  83:	eb 0f                	jmp    94 <main+0x94>
+  85:	48 8d 05 31 00 00 00 	lea    rax,[rip+0x31]        # bd <main+0xbd>
+  8c:	48 89 c1             	mov    rcx,rax
+  8f:	e8 00 00 00 00       	call   94 <main+0x94>
+  94:	b8 00 00 00 00       	mov    eax,0x0
+  99:	48 83 c4 30          	add    rsp,0x30
+  9d:	5d                   	pop    rbp
+  9e:	c3                   	ret
+  9f:	90                   	nop

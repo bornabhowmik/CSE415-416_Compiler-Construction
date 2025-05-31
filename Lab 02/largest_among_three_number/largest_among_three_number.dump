@@ -1,0 +1,59 @@
+
+largest_among_three_number.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 14 <main+0x14>
+  14:	48 89 c1             	mov    rcx,rax
+  17:	e8 00 00 00 00       	call   1c <main+0x1c>
+  1c:	48 8d 4d f0          	lea    rcx,[rbp-0x10]
+  20:	48 8d 55 f4          	lea    rdx,[rbp-0xc]
+  24:	48 8d 45 f8          	lea    rax,[rbp-0x8]
+  28:	49 89 c9             	mov    r9,rcx
+  2b:	49 89 d0             	mov    r8,rdx
+  2e:	48 89 c2             	mov    rdx,rax
+  31:	48 8d 05 16 00 00 00 	lea    rax,[rip+0x16]        # 4e <main+0x4e>
+  38:	48 89 c1             	mov    rcx,rax
+  3b:	e8 00 00 00 00       	call   40 <main+0x40>
+  40:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  43:	89 45 fc             	mov    DWORD PTR [rbp-0x4],eax
+  46:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  49:	39 45 fc             	cmp    DWORD PTR [rbp-0x4],eax
+  4c:	7d 06                	jge    54 <main+0x54>
+  4e:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  51:	89 45 fc             	mov    DWORD PTR [rbp-0x4],eax
+  54:	8b 45 f0             	mov    eax,DWORD PTR [rbp-0x10]
+  57:	39 45 fc             	cmp    DWORD PTR [rbp-0x4],eax
+  5a:	7d 06                	jge    62 <main+0x62>
+  5c:	8b 45 f0             	mov    eax,DWORD PTR [rbp-0x10]
+  5f:	89 45 fc             	mov    DWORD PTR [rbp-0x4],eax
+  62:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  65:	89 c2                	mov    edx,eax
+  67:	48 8d 05 1f 00 00 00 	lea    rax,[rip+0x1f]        # 8d <main+0x8d>
+  6e:	48 89 c1             	mov    rcx,rax
+  71:	e8 00 00 00 00       	call   76 <main+0x76>
+  76:	b8 00 00 00 00       	mov    eax,0x0
+  7b:	48 83 c4 30          	add    rsp,0x30
+  7f:	5d                   	pop    rbp
+  80:	c3                   	ret
+  81:	90                   	nop
+  82:	90                   	nop
+  83:	90                   	nop
+  84:	90                   	nop
+  85:	90                   	nop
+  86:	90                   	nop
+  87:	90                   	nop
+  88:	90                   	nop
+  89:	90                   	nop
+  8a:	90                   	nop
+  8b:	90                   	nop
+  8c:	90                   	nop
+  8d:	90                   	nop
+  8e:	90                   	nop
+  8f:	90                   	nop

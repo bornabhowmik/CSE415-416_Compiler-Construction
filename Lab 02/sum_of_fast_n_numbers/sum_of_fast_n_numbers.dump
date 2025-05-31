@@ -1,0 +1,46 @@
+
+sum_of_fast_n_numbers.o:     file format pe-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	e8 00 00 00 00       	call   d <main+0xd>
+   d:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  14:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 1b <main+0x1b>
+  1b:	48 89 c1             	mov    rcx,rax
+  1e:	e8 00 00 00 00       	call   23 <main+0x23>
+  23:	48 8d 45 f4          	lea    rax,[rbp-0xc]
+  27:	48 89 c2             	mov    rdx,rax
+  2a:	48 8d 05 1a 00 00 00 	lea    rax,[rip+0x1a]        # 4b <main+0x4b>
+  31:	48 89 c1             	mov    rcx,rax
+  34:	e8 00 00 00 00       	call   39 <main+0x39>
+  39:	c7 45 f8 01 00 00 00 	mov    DWORD PTR [rbp-0x8],0x1
+  40:	eb 0a                	jmp    4c <main+0x4c>
+  42:	8b 45 f8             	mov    eax,DWORD PTR [rbp-0x8]
+  45:	01 45 fc             	add    DWORD PTR [rbp-0x4],eax
+  48:	83 45 f8 01          	add    DWORD PTR [rbp-0x8],0x1
+  4c:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  4f:	39 45 f8             	cmp    DWORD PTR [rbp-0x8],eax
+  52:	7e ee                	jle    42 <main+0x42>
+  54:	8b 45 f4             	mov    eax,DWORD PTR [rbp-0xc]
+  57:	8b 55 fc             	mov    edx,DWORD PTR [rbp-0x4]
+  5a:	41 89 d0             	mov    r8d,edx
+  5d:	89 c2                	mov    edx,eax
+  5f:	48 8d 05 20 00 00 00 	lea    rax,[rip+0x20]        # 86 <main+0x86>
+  66:	48 89 c1             	mov    rcx,rax
+  69:	e8 00 00 00 00       	call   6e <main+0x6e>
+  6e:	b8 00 00 00 00       	mov    eax,0x0
+  73:	48 83 c4 30          	add    rsp,0x30
+  77:	5d                   	pop    rbp
+  78:	c3                   	ret
+  79:	90                   	nop
+  7a:	90                   	nop
+  7b:	90                   	nop
+  7c:	90                   	nop
+  7d:	90                   	nop
+  7e:	90                   	nop
+  7f:	90                   	nop
