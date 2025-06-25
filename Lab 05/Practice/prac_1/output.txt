@@ -1,0 +1,14 @@
+if -> IF_KEYWORD
+( -> LEFT_PAREN
+a -> IDENTIFIER
+> -> REL_OP
+b -> IDENTIFIER
+) -> RIGHT_PAREN
+{ -> LEFT_BRACE
+a -> IDENTIFIER
+= -> ASSIGN
+b -> IDENTIFIER
++ -> PLUS
+c -> IDENTIFIER
+; -> 
+} -> RIGHT_BRACE
