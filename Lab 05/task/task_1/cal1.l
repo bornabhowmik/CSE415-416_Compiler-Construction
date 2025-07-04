@@ -20,6 +20,9 @@ char_lit        \'[a-zA-Z0-9]\'|‘[a-zA-Z0-9]’|“[^\"]*”|\"[^\"]*\"
 "int"           { printf("%s -> KEYWORD_INT\n", yytext); }
 "return"        { printf("%s -> KEYWORD_RETURN\n", yytext); }
 "while"         { printf("%s -> KEYWORD_WHILE\n", yytext); }
+"if"            { printf("%s -> KEYWORD_IF\n", yytext); }
+"else"          { printf("%s -> KEYWORD_Else\n", yytext); }
+
 
 "="             { printf("%s -> ASSIGN\n", yytext); }
 "=="            { printf("%s -> EQUALS\n", yytext); }
