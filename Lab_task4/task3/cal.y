@@ -69,5 +69,6 @@ void yyerror(const char *s) {
 
 int main() {
     yyparse();
+    printf("parsing finished");
     return 0;
 }
